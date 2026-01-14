@@ -22,6 +22,10 @@ app.delete("/delete-products", (req, res) => {
     res.send("Product deleted successfully.");
 })
 
+app.post("/new-product", (req, res) => {
+    res.send("You added a new product!");
+})
+
 app.listen("5000", () => {
     console.log("The server running on port 5000.");
 })
